@@ -10,6 +10,7 @@ import LoginScreen from "./pages/LoginScreen";
 import Dashboard from "./pages/Dashboard";
 import NotificationsPage from "./pages/NotificationsPage";
 import FormsPage from "./pages/FormsPage";
+import IncentivesPage from "./pages/IncentivesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/" element={<Dashboard />} />
             <Route path="/notifications" element={<NotificationsPage />} />
             <Route path="/forms" element={<FormsPage />} />
+            <Route path="/incentives" element={<IncentivesPage />} />
             {/* Add more routes for other sections as needed */}
           </Route>
           

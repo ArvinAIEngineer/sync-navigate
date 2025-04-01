@@ -15,6 +15,7 @@ import {
   User,
   Settings,
   LogOut,
+  Home,
 } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -47,7 +48,7 @@ const SideNav = () => {
   return (
     <div className="flex h-full flex-col border-r bg-white">
       <div className="p-4">
-        <h2 className="font-bold text-primary text-xl">SyncNavigate</h2>
+        <h2 className="font-bold text-primary text-xl">BharatOne</h2>
         <p className="text-sm text-muted-foreground">Field Staff App</p>
       </div>
       

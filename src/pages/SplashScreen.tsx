@@ -16,14 +16,24 @@ const SplashScreen = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-primary">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#8B2131]">
       <div className="text-center">
         <div className="mb-4 relative">
-          <div className="text-3xl font-bold text-white">
-            Sync<span className="text-brand-orange">Navigate</span>
+          <div className="mb-6">
+            <img 
+              src="/lovable-uploads/1e092a6d-a789-47c0-9285-9426903f8a2e.png" 
+              alt="BharatOne Logo" 
+              className="w-64 h-auto mx-auto"
+            />
           </div>
-          <div className="animate-pulse-light text-white/80 text-sm mt-2">
-            Field Staff App
+          <div className="text-3xl font-bold text-white">
+            BharatOne
+          </div>
+          <div className="text-white/90 text-sm mt-2">
+            Prayaas se pragati
+          </div>
+          <div className="text-white/70 text-xs mt-1">
+            A 100% subsidiary of IndusInd Bank Limited
           </div>
         </div>
         <div className="mt-8">

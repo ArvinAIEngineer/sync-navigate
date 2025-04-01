@@ -1,14 +1,14 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Home, Search, BarChart2, FileText, User } from "lucide-react";
+import { Home, Search, BarChart2, FileText, DollarSign } from "lucide-react";
 
 const navigation = [
   { name: "Home", to: "/", icon: Home },
   { name: "Search", to: "/search", icon: Search },
-  { name: "Dashboards", to: "/dashboards", icon: BarChart2 },
+  { name: "Incentives", to: "/incentives", icon: DollarSign },
   { name: "Forms", to: "/forms", icon: FileText },
-  { name: "Profile", to: "/my-info", icon: User },
+  { name: "Reports", to: "/dashboards", icon: BarChart2 },
 ];
 
 const BottomNavigation = () => {
@@ -21,7 +21,7 @@ const BottomNavigation = () => {
             to={item.to}
             className={({ isActive }) =>
               `flex-1 py-2 flex flex-col items-center justify-center ${
-                isActive ? "text-primary" : "text-gray-500"
+                isActive ? "text-[#8B2131]" : "text-gray-500"
               }`
             }
           >

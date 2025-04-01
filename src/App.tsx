@@ -11,6 +11,9 @@ import Dashboard from "./pages/Dashboard";
 import NotificationsPage from "./pages/NotificationsPage";
 import FormsPage from "./pages/FormsPage";
 import IncentivesPage from "./pages/IncentivesPage";
+import CustomerConnectPage from "./pages/CustomerConnectPage";
+import SearchPage from "./pages/SearchPage";
+import CommunicatorPage from "./pages/CommunicatorPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +33,9 @@ const App = () => (
             <Route path="/notifications" element={<NotificationsPage />} />
             <Route path="/forms" element={<FormsPage />} />
             <Route path="/incentives" element={<IncentivesPage />} />
+            <Route path="/customer-connect" element={<CustomerConnectPage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/communicator" element={<CommunicatorPage />} />
             {/* Add more routes for other sections as needed */}
           </Route>
           

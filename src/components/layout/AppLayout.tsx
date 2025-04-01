@@ -13,7 +13,7 @@ const AppLayout = () => {
       <Header />
       <main className="flex-1 pb-16">
         {isIncentivesPage && (
-          <div className="bg-[#8B2131] text-white text-center py-2 px-4 text-sm font-medium">
+          <div className="bg-brand-bfil-red text-white text-center py-2 px-4 text-sm font-medium">
             You are viewing the Incentives section
           </div>
         )}

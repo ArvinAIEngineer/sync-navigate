@@ -67,8 +67,15 @@ export default {
 					blue: "#2563EB",
 					indigo: "#4338CA",
 					teal: "#0D9488",
-					orange: "#EA580C",
-					red: "#DC2626"
+					orange: "#F59E0B",
+					red: "#8B2131",
+					bfil: {
+						red: "#8B2131",
+						gray: "#58595B",
+						lightgray: "#D1D3D4",
+						darkblue: "#00205B",
+						navy: "#001F3F"
+					}
 				}
 			},
 			fontFamily: {

@@ -21,7 +21,7 @@ const BottomNavigation = () => {
             to={item.to}
             className={({ isActive }) =>
               `flex-1 py-2 flex flex-col items-center justify-center ${
-                isActive ? "text-[#8B2131]" : "text-gray-500"
+                isActive ? "text-brand-bfil-red" : "text-gray-500"
               }`
             }
           >

@@ -25,9 +25,13 @@ const BottomNavigation = () => {
               }`
             }
           >
-            <item.icon className={`h-5 w-5 ${
-              item.name === "Home" ? "text-[#8B2131]" : ""
-            }`} />
+            <div className={`flex items-center justify-center p-1 rounded-full ${
+              isActive ? "bg-brand-bfil-red" : "bg-gray-200"
+            }`}>
+              <item.icon className={`h-5 w-5 ${
+                isActive ? "text-white" : "text-gray-500"
+              }`} />
+            </div>
             <span className="text-xs mt-1">{item.name}</span>
           </NavLink>
         ))}

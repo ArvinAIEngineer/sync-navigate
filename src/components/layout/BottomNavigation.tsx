@@ -8,7 +8,7 @@ const navigation = [
   { name: "Search", to: "/search", icon: Search },
   { name: "Incentives", to: "/incentives", icon: DollarSign },
   { name: "Forms", to: "/forms", icon: FileText },
-  { name: "Reports", to: "/dashboards", icon: BarChart2 },
+  { name: "Reports", to: "/workflows", icon: BarChart2 },
 ];
 
 const BottomNavigation = () => {

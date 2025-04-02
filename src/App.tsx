@@ -14,6 +14,8 @@ import IncentivesPage from "./pages/IncentivesPage";
 import CustomerConnectPage from "./pages/CustomerConnectPage";
 import SearchPage from "./pages/SearchPage";
 import CommunicatorPage from "./pages/CommunicatorPage";
+import WorkflowsPage from "./pages/WorkflowsPage";
+import GeoLocationPage from "./pages/GeoLocationPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/customer-connect" element={<CustomerConnectPage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/communicator" element={<CommunicatorPage />} />
+            <Route path="/workflows" element={<WorkflowsPage />} />
+            <Route path="/geolocation" element={<GeoLocationPage />} />
             {/* Add more routes for other sections as needed */}
           </Route>
           

@@ -25,7 +25,9 @@ const BottomNavigation = () => {
               }`
             }
           >
-            <item.icon className="h-5 w-5" />
+            <item.icon className={`h-5 w-5 ${
+              item.name === "Home" ? "text-[#8B2131]" : ""
+            }`} />
             <span className="text-xs mt-1">{item.name}</span>
           </NavLink>
         ))}

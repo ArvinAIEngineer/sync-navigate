@@ -39,13 +39,13 @@ const Dashboard = () => {
               <p className="text-sm text-muted-foreground">September 12, 2023</p>
             </div>
             <div className="text-right">
-              <span className="text-2xl font-bold text-primary">78%</span>
+              <span className="text-2xl font-bold text-brand-bfil-red">78%</span>
               <p className="text-xs text-muted-foreground">of daily goal</p>
             </div>
           </div>
           
           <div className="mt-4 h-2 w-full bg-gray-200 rounded-full overflow-hidden">
-            <div className="bg-primary h-full rounded-full" style={{ width: "78%" }}></div>
+            <div className="bg-brand-bfil-red h-full rounded-full" style={{ width: "78%" }}></div>
           </div>
           
           <div className="grid grid-cols-3 gap-4 mt-4">
@@ -68,8 +68,8 @@ const Dashboard = () => {
       <div className="grid grid-cols-3 gap-4">
         {modules.map((module) => (
           <Link to={module.path} key={module.name} className="module-card">
-            <div className="module-card-icon">
-              <module.icon className="h-5 w-5" />
+            <div className="module-card-icon bg-brand-bfil-red/10">
+              <module.icon className="h-5 w-5 text-brand-bfil-red" />
             </div>
             <span className="text-xs font-medium text-center">{module.name}</span>
             {module.count && <span className="notification-badge">{module.count}</span>}

@@ -106,7 +106,7 @@
   }
   
   .module-card-icon {
-    @apply mb-2 text-brand-bfil-red p-3 bg-brand-bfil-red/10 rounded-full;
+    @apply mb-2 p-3 rounded-full;
   }
   
   .notification-badge {

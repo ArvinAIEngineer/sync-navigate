@@ -20,19 +20,21 @@ const BottomNavigation = () => {
             key={item.name}
             to={item.to}
             className={({ isActive }) =>
-              `flex-1 py-2 flex flex-col items-center justify-center ${
-                isActive ? "text-brand-bfil-red" : "text-gray-500"
-              }`
+              `nav-item ${isActive ? "text-brand-bfil-red" : "text-gray-500"}`
             }
           >
             {({ isActive }) => (
               <>
-                <div className={`flex items-center justify-center p-1 rounded-full ${
-                  isActive ? "bg-brand-bfil-red" : "bg-gray-200"
-                }`}>
-                  <item.icon className={`h-5 w-5 ${
-                    isActive ? "text-white" : "text-gray-500"
-                  }`} />
+                <div 
+                  className={`nav-icon-container ${
+                    isActive ? "bg-brand-bfil-red" : "bg-gray-200"
+                  }`}
+                >
+                  <item.icon 
+                    className={`nav-icon ${
+                      isActive ? "text-white" : "text-gray-500"
+                    }`} 
+                  />
                 </div>
                 <span className="text-xs mt-1">{item.name}</span>
               </>

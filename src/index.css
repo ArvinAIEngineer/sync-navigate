@@ -128,4 +128,25 @@
   .bfil-container {
     @apply bg-white shadow-md rounded-md p-4 border border-gray-100;
   }
+  
+  /* New navigation hover styles */
+  .nav-item {
+    @apply flex-1 py-2 flex flex-col items-center justify-center relative transition-colors duration-200;
+  }
+  
+  .nav-item:hover .nav-icon-container {
+    @apply bg-brand-bfil-red;
+  }
+  
+  .nav-item:hover .nav-icon {
+    @apply text-white;
+  }
+  
+  .nav-icon-container {
+    @apply flex items-center justify-center p-1 rounded-full transition-colors duration-200;
+  }
+  
+  .nav-icon {
+    @apply h-5 w-5 transition-colors duration-200;
+  }
 }

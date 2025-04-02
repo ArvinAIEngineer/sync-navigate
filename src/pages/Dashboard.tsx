@@ -71,7 +71,7 @@ const Dashboard = () => {
             <div className="module-icon-container bg-brand-bfil-red rounded-full p-3 flex items-center justify-center">
               <module.icon className="module-icon h-5 w-5 text-white" />
             </div>
-            <span className="text-xs font-medium text-center mt-2">{module.name}</span>
+            <span className="module-text text-xs font-medium text-center mt-2">{module.name}</span>
             {module.count && <span className="notification-badge">{module.count}</span>}
           </Link>
         ))}

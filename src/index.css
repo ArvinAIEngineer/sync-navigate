@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -105,11 +106,19 @@
   }
   
   .module-card:hover .module-icon-container {
-    @apply bg-white border border-brand-bfil-red;
+    @apply bg-brand-bfil-red border border-white;
   }
   
   .module-card:hover .module-icon {
-    @apply text-brand-bfil-red;
+    @apply text-white;
+  }
+  
+  .module-card:hover .module-text {
+    @apply text-white;
+  }
+  
+  .module-card:hover {
+    @apply bg-brand-bfil-red;
   }
   
   .module-icon-container {
@@ -117,6 +126,10 @@
   }
   
   .module-icon {
+    @apply transition-colors duration-200;
+  }
+  
+  .module-text {
     @apply transition-colors duration-200;
   }
   
